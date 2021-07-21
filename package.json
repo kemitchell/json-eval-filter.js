@@ -1,0 +1,11 @@
+{
+  "name": "json-eval-filter",
+  "version": "0.0.0",
+  "description": "read, process, and write JSON data at the command line",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "repository": "kemitchell/json-eval-filter.js",
+  "license": "BlueOak-1.0.0",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
