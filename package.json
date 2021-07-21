@@ -5,7 +5,10 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/json-eval-filter.js",
   "license": "BlueOak-1.0.0",
-  "bin": "./bin.js",
+  "files": [
+    "bin.js"
+  ],
+  "bin": "bin.js",
   "scripts": {
     "test": "node test.js"
   }
