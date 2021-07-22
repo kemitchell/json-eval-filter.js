@@ -11,17 +11,15 @@ process.stdin
   })
   .once('end', () => {
     // Parse standard input as JSON.
-    let data
+    let input
     try {
-      data = JSON.parse(Buffer.concat(chunks))
+      input = JSON.parse(Buffer.concat(chunks))
     } catch (error) {
       console.error(error)
       process.exit(1)
     }
     /* eslint-disable prefer-const */
-    /* eslint-disable no-unused-vars */
-    // Alias `data` to `d` for short.
-    let d = data
+    let output = input
     // Evaluate every argument as a script.
     for (const script of process.argv.slice(2)) {
       try {
@@ -33,8 +31,8 @@ process.stdin
         process.exit(1)
       }
     }
-    // Write the data to standard output as JSON.
-    process.stdout.write(JSON.stringify(data, null, 2))
+    // Write the output to standard output as JSON.
+    process.stdout.write(JSON.stringify(output, null, 2))
     process.stdout.write('\n')
     process.exit(0)
   })
