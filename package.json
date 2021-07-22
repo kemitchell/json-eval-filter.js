@@ -1,6 +1,6 @@
 {
   "name": "json-eval-filter",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "read, process, and write JSON data at the command line",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/json-eval-filter.js",
